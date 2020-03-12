@@ -1,0 +1,31 @@
+﻿Bugs--------------------------------------------------------
+The saving code sometimes removes a | at the top. 
+	Codes at time remove | at random locations. 
+Sometimes the threads write at the wrong locations. 
+When clearing the thread text side of the console, the first letter on the next line disappear - might have fixed it. See the explanation in the function
+The interface can experience wierd bugs at time, but they are so rare and impossible to artifically reproduce, they will be hard to fix
+The "Saving..." text is not always removed. Sometimes it is in the correct section, but most of the time it is not. Might want to prevent multiple threads from accessing the Y location at the same time.
+
+To look into--------------------------------------------------------
+The marimba paper. Low SR and decay cause signals to last a very long time.
+
+To add--------------------------------------------------------
+Add more documentation - in progress.
+Add more synthesis - in progress.
+Add more filters - in progress.
+In SaveLocation() check if tempSave is a valid path and set up the proper error handling.
+Try and make NumberCollector into a generic function.
+Same for ZeroNumberDector or at least make the while loop a function and try and make it generic
+FilenameValid should informs the user of what signs were not valid in a file if a unvalid file is entered - kind of done using a menu for it. 
+A lot of the functions in Interface helps the interface, yet they are not part of the interface and useful for other things, move them, but only if they do not call other classes's functions - In progress. 
+Consider to allow single channels to convert into 2 channels with phasing, how much of the signal is in the left/right ear and allowing it to change over "time".
+Consider making it such that you get a pitch estimation for each channel.
+
+Prevent the program from loading non-pcm files.
+
+See if you can improve the speed of the pitch estimators using pointers.
+
+Write C++ code that can convert the format of wave files that do not use PCM and can convert back.
+
+Write a class/function that can seperate a multi-channel signal into multiple 1-channel signals, just have to change the channel amount in the header when doing it and the data size and total length of data + header
+

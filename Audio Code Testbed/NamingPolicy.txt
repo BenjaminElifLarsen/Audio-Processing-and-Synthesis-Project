@@ -1,0 +1,11 @@
+﻿--Naming Policy--
+The program ignores lower- and uppercase letters.
+Reserved names cannot be used, these being
+     "CON", "PRN", "AUX" and "NUL",
+     "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8" and "COM9",
+     "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8" and "LPT9"
+The following signs:  '<', '>', ':', '"', '/', '\\', '|', '?', '*' and '\0'
+cannot be used. 
+Names cannot end with '.' or ' '. 
+Right now, the program will auto add ".wav" or ".txt", depending on the save
+function, to any files when saving.

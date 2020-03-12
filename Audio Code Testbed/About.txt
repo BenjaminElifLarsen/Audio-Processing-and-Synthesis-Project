@@ -1,0 +1,10 @@
+﻿--Audio Processing and Synthesis Program--
+The APSP... for some of your needs.
+Under development. 
+Currently, the program can only process wav files encoded using PCM.
+All synthesis sounds are stored as wavs.
+IP stands for "Implemented Partly". NP stands for "Not Implemented".
+Options in any IP menues are fully working, but may lack full control of
+parameters and/or optimisations.
+Pitch estimation is currently not threaded. It might seem like the program
+has crashed, but it is working. 
